@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Turn</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="./screen.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- Search Form -->
+      <div class="mt-6 grid grid-cols-1 row-gap-6 col-gap-4 sm:grid-cols-3">
+        <div class="sm:col-span-1">
+          <label
+            for="title"
+            class="block text-sm font-medium leading-5 text-gray-700"
+          >
+            Title
+          </label>
+          <div class="mt-1 rounded-md shadow-sm">
+            <input
+              id="title"
+              class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+            />
+          </div>
+        </div>
+
+        <div class="sm:col-span-1">
+          <label
+            for="numberOfPlayers"
+            class="block text-sm font-medium leading-5 text-gray-700"
+          >
+            Number of Players
+          </label>
+          <div class="mt-1 rounded-md shadow-sm">
+            <select
+              id="numberOfPlayers"
+              class="form-select block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+            >
+              <option>Any</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8+</option>
+            </select>
+          </div>
+        </div>
+        <div class="sm:col-span-1">
+          <label
+            for="recommendedAge"
+            class="block text-sm font-medium leading-5 text-gray-700"
+          >
+            Recommended Age
+          </label>
+          <div class="mt-1 rounded-md shadow-sm">
+            <select
+              id="recommendedAge"
+              class="form-select block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+            >
+              <option>All</option>
+              <option>4+</option>
+              <option>12+</option>
+              <option>16+</option>
+              <option>18+</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <h2 class="my-4 font-bold text-lg">Search Results</h2>
+      <!-- Results Table -->
+      <div class="flex flex-col">
+        <div
+          class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
+        >
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200"
+          >
+            <table class="min-w-full">
+              <thead>
+                <tr>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Title
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Players
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Age
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Theme
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Difficulty
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Play Time
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Mechanics
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5"
+                  >
+                    Backgamon
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5"
+                  >
+                    2-4
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5"
+                  >
+                    10+
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5"
+                  ></td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5"
+                  >
+                    3.4
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5"
+                  ></td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5"
+                  ></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6"
+      >
+        <div class="flex-1 flex justify-between sm:hidden">
+          <a
+            href="#"
+            class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+          >
+            Previous
+          </a>
+          <a
+            href="#"
+            class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+          >
+            Next
+          </a>
+        </div>
+        <div
+          class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between"
+        >
+          <div>
+            <p class="text-sm leading-5 text-gray-700">
+              Showing
+              <span class="font-medium">1</span>
+              to
+              <span class="font-medium">10</span>
+              of
+              <span class="font-medium">97</span>
+              results
+            </p>
+          </div>
+          <div>
+            <nav class="relative z-0 inline-flex shadow-sm">
+              <button
+                type="button"
+                class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
+                aria-label="Previous"
+              >
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+              >
+                1
+              </button>
+              <button
+                type="button"
+                class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+              >
+                2
+              </button>
+              <button
+                type="button"
+                class="hidden md:inline-flex -ml-px relative items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+              >
+                3
+              </button>
+              <span
+                class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700"
+              >
+                ...
+              </span>
+              <button
+                type="button"
+                class="hidden md:inline-flex -ml-px relative items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+              >
+                8
+              </button>
+              <button
+                type="button"
+                class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+              >
+                9
+              </button>
+              <button
+                type="button"
+                class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+              >
+                10
+              </button>
+              <button
+                type="button"
+                class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
+                aria-label="Next"
+              >
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
